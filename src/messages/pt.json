@@ -76,5 +76,166 @@
     "description": "Solicite um diagnóstico técnico gratuito de 30 minutos. Avaliarei o cenário atual da sua operação viária e apresentarei a projeção de economia com a migração para infraestrutura GIS dedicada.",
     "cta_main": "Agendar Diagnóstico Técnico",
     "cta_email": "Ou envie um e-mail para soliveira796@gmail.com"
+  },
+  "SomapPage": {
+    "hero": {
+      "badge": "WebGIS Corporativo & Inteligência Espacial",
+      "title": "Inteligência Geográfica Corporativa Sem Limites.",
+      "subtitle": "Uma plataforma WebGIS completa para gestão, visualização e análise de dados espaciais. Construída 100% com tecnologias de código aberto para que sua organização escale sem custos por licença de usuário.",
+      "cta_primary": "Agendar uma Demonstração",
+      "cta_secondary": "Explorar Recursos",
+      "credibility": "Powered by PostGIS, GeoServer e pgRouting."
+    },
+    "differentials": {
+      "tag": "Por que escolher o SOMAP?",
+      "title": "Superpoderes Geoespaciais para a sua Operação",
+      "subtitle": "Desenvolvido para eliminar gargalos comerciais, garantindo autonomia, precisão e escalabilidade ilimitada.",
+      "items": {
+        "unlimited_users": {
+          "title": "Usuários Ilimitados",
+          "description": "Compartilhe mapas e painéis logísticos com toda a sua organização sem os custos abusivos de licenças SaaS por assento (SaaS-style per-seat limits)."
+        },
+        "topological_routing": {
+          "title": "Roteirização Topológica Real",
+          "description": "Vá além da visualização. Calcule rotas ponto a ponto ou multiparadas sobre grafos viários com restrições e custos reais de distância e tempo."
+        },
+        "geocoding": {
+          "title": "Geocodificação Híbrida e Resiliente",
+          "description": "Um motor próprio de endereçamento otimizado para o território brasileiro (integrando bases OSM e CNEFE/IBGE)."
+        },
+        "remote_sensing": {
+          "title": "Análises em Nuvem (Sensoriamento Remoto)",
+          "description": "Geração nativa de índices agrícolas (NDVI) e extração de dados climáticos e imagens de satélite em tempo real."
+        },
+        "whitelabel": {
+          "title": "Personalização (White-label)",
+          "description": "Adicione o logotipo, as cores e a identidade visual da sua empresa. O SOMAP se adapta à sua marca."
+        },
+        "workspaces": {
+          "title": "Workspaces Isolados",
+          "description": "Organize camadas, mapas e dados vetoriais em áreas de trabalho temáticas seguras."
+        }
+      }
+    },
+    "deep_dive": {
+      "badge": "Sensoriamento Remoto Nativo",
+      "title": "Monitoramento Agrícola & Climático com NDVI",
+      "subtitle": "Delimite áreas de interesse (ROI) e processe dados de satélite Sentinel-2 e índices climáticos instantaneamente dentro da plataforma.",
+      "stats": {
+        "ndvi_avg": "NDVI Médio",
+        "ndvi_range": "Intervalo Vegetativo",
+        "rain": "Chuva Acumulada",
+        "temp": "Temperatura Média"
+      },
+      "features": [
+        "Delimitação vetorial interativa de polígonos de análise agrícola",
+        "Pipeline automatizado de cálculo de NDVI em tempo real",
+        "Correlação direta com dados meteorológicos históricos e previsões",
+        "Ajuste dinâmico de opacidade de imagem sobre camadas de satélite e CAR"
+      ]
+    },
+    "editions": {
+      "tag": "Modelo de Implantação",
+      "title": "Escolha a Edição Ideal para a sua Infraestrutura",
+      "subtitle": "Não tem certeza de qual caminho seguir? Agende uma demonstração e avaliaremos o melhor cenário para o seu caso.",
+      "cloud": {
+        "title": "Cloud Edition",
+        "subtitle": "Edição Conectada",
+        "tagline": "Para quem já tem infraestrutura.",
+        "description": "Nós hospedamos a interface WebGIS do SOMAP e conectamos de forma segura ao seu próprio banco de dados PostGIS e servidor GeoServer.",
+        "cta": "Falar sobre Cloud",
+        "features": [
+          "Interface WebGIS SOMAP hospedada e sempre atualizada",
+          "Conexão segura via túnel a PostGIS e GeoServer do cliente",
+          "Workspaces ilimitados para equipes internas",
+          "Suporte a camadas XYZ, WMS, WFS e GeoJSON",
+          "Zero taxa por usuário ou por assento"
+        ]
+      },
+      "managed": {
+        "badge": "Mais Procurada",
+        "title": "Managed Edition",
+        "subtitle": "Edição Gerenciada",
+        "tagline": "Para focar apenas no negócio, não nos servidores.",
+        "description": "Uma solução completa na nuvem. Gerenciamos toda a stack geoespacial: banco de dados, motor de rotas, servidor de mapas e a interface, com monitoramento contínuo.",
+        "cta": "Falar sobre Managed",
+        "features": [
+          "Stack geoespacial completa gerenciada na nuvem",
+          "Instâncias dedicadas de PostGIS + GeoServer + pgRouting",
+          "Monitoramento 24/7, backups automáticos e alta disponibilidade",
+          "Módulo de Sensoriamento Remoto e NDVI habilitado",
+          "Suporte técnico prioritário e manutenções inclusas"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Edition",
+        "subtitle": "Edição Corporativa",
+        "tagline": "Controle total e alta performance.",
+        "description": "A stack completa do SOMAP implantada em servidores dedicados (ou via Kubernetes) sob a infraestrutura do cliente, com suporte técnico de nível sênior integrado.",
+        "cta": "Falar sobre Enterprise",
+        "features": [
+          "Implantação On-Premise ou Kubernetes na nuvem do cliente",
+          "Controle topológico e customização de código-fonte",
+          "Integração direta com ERP, WMS e barramentos corporativos",
+          "SLA de atendimento de nível sênior dedicado",
+          "White-label total e soberania irrestrita de dados"
+        ]
+      }
+    },
+    "use_cases": {
+      "tag": "Setores Atendidos",
+      "title": "Onde o SOMAP Transforma Operações",
+      "subtitle": "Solução versátil adaptada para verticais corporativas que dependem de alta precisão territorial.",
+      "logistics": {
+        "title": "Logística e Transporte",
+        "description": "Despacho de frota, roteirização multi-paradas com custos reais de tráfego e emissão de links de navegação precisos para motoristas."
+      },
+      "agribusiness": {
+        "title": "Agronegócio e Meio Ambiente",
+        "description": "Monitoramento de safras via NDVI, cruzamento com limites de CAR (Cadastro Ambiental Rural), painéis climáticos interativos e gestão de propriedades rurais."
+      },
+      "public_sector": {
+        "title": "Gestão Pública (Cidades Inteligentes)",
+        "description": "Mapeamento de infraestrutura urbana, geocodificação de endereços fiscais e bases do CNEFE/IBGE para planejamento territorial e arrecadação."
+      }
+    },
+    "form": {
+      "title": "Solicite uma demonstração do SOMAP",
+      "subtitle": "Preencha o formulário abaixo e entraremos em contato para estruturar uma apresentação focada nos seus desafios espaciais.",
+      "name_label": "Nome Completo *",
+      "name_placeholder": "Seu nome completo",
+      "email_label": "E-mail Corporativo *",
+      "email_placeholder": "voce@empresa.com",
+      "org_label": "Organização / Empresa *",
+      "org_placeholder": "Nome da sua empresa",
+      "challenge_label": "Qual seu principal desafio hoje? *",
+      "challenge_options": {
+        "routing": "Logística / Roteirização",
+        "webgis": "Visualização WebGIS & Camadas",
+        "agri": "Monitoramento Agrícola & NDVI",
+        "other": "Outro desafio"
+      },
+      "deployment_label": "Preferência de Implantação *",
+      "deployment_options": {
+        "cloud": "Cloud Edition (Edição Conectada)",
+        "managed": "Managed Edition (Edição Gerenciada)",
+        "enterprise": "Enterprise Edition (Edição Corporativa)",
+        "undecided": "Ainda não sei (Quero orientação)"
+      },
+      "message_label": "Mensagem / Detalhes adicionais (opcional)",
+      "message_placeholder": "Conte-nos brevemente sobre o volume de dados ou requisitos específicos...",
+      "submit_button": "Solicitar Demo",
+      "sending": "Enviando solicitação...",
+      "success_title": "Solicitação enviada com sucesso!",
+      "success_message": "Obrigado pelo contato. Em breve nossa equipe entrará em contato para agendar sua demonstração personalizada do SOMAP.",
+      "send_another": "Enviar outra solicitação"
+    },
+    "footer_sub": {
+      "badge": "Laboratório de Engenharia Geoespacial focado em soluções Open Source.",
+      "consulting": "Consultoria GIS",
+      "support": "Suporte Técnico",
+      "docs": "Documentação da API",
+      "rights": "Todos os direitos reservados."
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Menu, X, Globe } from "lucide-react";
 import { getAssetPath } from "@/lib/utils";
@@ -10,6 +10,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("Nav");
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,7 +25,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/#inicio", label: t("home") },
     { href: "/#desafio", label: t("challenge") },
-    { href: "/#somap", label: t("somap") },
+    { href: "/somap", label: "SOMAP (WebGIS)", isHighlighted: true },
     { href: "/#pilares", label: t("pillars") },
     { href: "/#contato", label: t("contact") },
   ];
@@ -57,18 +58,30 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-navy/70 hover:text-navy transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center gap-7">
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm font-medium transition-all flex items-center gap-1.5 ${
+                    isActive
+                      ? "text-teal font-bold"
+                      : link.isHighlighted
+                      ? "text-teal hover:text-teal-light font-semibold bg-teal/10 hover:bg-teal/15 px-3 py-1 rounded-full border border-teal/30 shadow-xs"
+                      : "text-navy/70 hover:text-navy"
+                  }`}
+                >
+                  {link.label}
+                  {link.isHighlighted && !isActive && (
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-teal animate-pulse" />
+                  )}
+                </Link>
+              );
+            })}
             
-            <div className="h-6 w-px bg-border mx-2" />
+            <div className="h-6 w-px bg-border mx-1" />
             
             <LanguageSwitcher />
 
@@ -98,16 +111,28 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 py-8 flex flex-col gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-lg font-semibold text-navy"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className={`text-lg font-semibold flex items-center justify-between ${
+                  isActive
+                    ? "text-teal"
+                    : link.isHighlighted
+                    ? "text-teal"
+                    : "text-navy"
+                }`}
+              >
+                <span>{link.label}</span>
+                {link.isHighlighted && (
+                  <span className="text-xs bg-teal/10 text-teal px-2 py-0.5 rounded-full">Plataforma</span>
+                )}
+              </Link>
+            );
+          })}
           <div className="flex items-center justify-between pt-4 border-t border-border">
              <span className="text-sm font-medium text-text-muted flex items-center gap-2">
                <Globe size={16} /> Language

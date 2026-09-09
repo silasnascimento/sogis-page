@@ -164,23 +164,30 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               {/* Browser mockup of mapping interface */}
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-border bg-white p-2">
-                <div className="bg-white border-b border-border/60 px-4 py-2.5 flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
-                  <div className="w-40 h-4 bg-bg-alt rounded mx-auto" />
+              <Link href="/somap" className="block group">
+                <div className="rounded-3xl overflow-hidden shadow-2xl border border-border bg-white p-2 group-hover:border-teal/50 transition-all">
+                  <div className="bg-white border-b border-border/60 px-4 py-2.5 flex items-center gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                    <div className="w-40 h-4 bg-bg-alt rounded mx-auto" />
+                  </div>
+                  <div className="relative overflow-hidden bg-bg">
+                    <Image
+                      src={getAssetPath("/images/somap-webgis-interface.png")}
+                      alt={t('SomapEngine.screenshot_alt')}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto group-hover:scale-102 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/20 transition-colors flex items-center justify-center">
+                      <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-teal text-white font-bold text-xs px-4 py-2 rounded-full shadow-xl transform translate-y-1 group-hover:translate-y-0 duration-300">
+                        Ver Subpágina do SOMAP →
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative overflow-hidden bg-bg">
-                  <Image
-                    src={getAssetPath("/images/screenshot-map.png")}
-                    alt={t('SomapEngine.screenshot_alt')}
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto hover:scale-102 transition-transform duration-500"
-                  />
-                </div>
-              </div>
+              </Link>
             </div>
             
             <div className="order-1 lg:order-2">
@@ -193,13 +200,21 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <p className="text-lg leading-relaxed text-text-muted mb-8">
                 {t('SomapEngine.description')}
               </p>
-              <Link
-                href="/#contato"
-                className="inline-flex items-center gap-2 text-teal font-bold hover:text-teal-light transition-colors group text-sm"
-              >
-                {t('Hero.cta_primary')}
-                <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                <Link
+                  href="/somap"
+                  className="rounded-full bg-teal px-8 py-3.5 text-sm font-bold text-white shadow-md hover:bg-teal-light transition-all flex items-center justify-center gap-2 group text-center"
+                >
+                  Conhecer a Plataforma SOMAP
+                  <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/#contato"
+                  className="rounded-full bg-white border border-border px-8 py-3.5 text-sm font-bold text-navy hover:bg-bg-alt transition-all text-center"
+                >
+                  {t('Hero.cta_primary')}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

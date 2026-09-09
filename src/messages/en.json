@@ -76,5 +76,166 @@
     "description": "Request a free 30-minute technical diagnostic. I will evaluate your current road operation and show the projected savings from migrating to a dedicated GIS infrastructure.",
     "cta_main": "Schedule Technical Diagnostic",
     "cta_email": "Or send an email to soliveira796@gmail.com"
+  },
+  "SomapPage": {
+    "hero": {
+      "badge": "Enterprise WebGIS & Spatial Intelligence",
+      "title": "Enterprise Geographic Intelligence Without Limits.",
+      "subtitle": "A complete WebGIS platform for spatial data management, visualization, and analytics. Built 100% on open source technologies so your organization scales without per-user licensing costs.",
+      "cta_primary": "Schedule a Demonstration",
+      "cta_secondary": "Explore Features",
+      "credibility": "Powered by PostGIS, GeoServer, and pgRouting."
+    },
+    "differentials": {
+      "tag": "Why Choose SOMAP?",
+      "title": "Geospatial Superpowers for Your Operations",
+      "subtitle": "Engineered to eliminate proprietary bottlenecks, ensuring autonomy, precision, and unlimited scale.",
+      "items": {
+        "unlimited_users": {
+          "title": "Unlimited Users",
+          "description": "Share maps and logistics dashboards across your entire organization without prohibitive per-seat SaaS license costs."
+        },
+        "topological_routing": {
+          "title": "Real Topological Routing",
+          "description": "Go beyond simple visualization. Compute point-to-point and multi-stop routes on real road graphs with distance, vehicle restrictions, and real travel times."
+        },
+        "geocoding": {
+          "title": "Hybrid & Resilient Geocoding",
+          "description": "Proprietary address engine optimized for Brazilian territory, seamlessly integrating OSM and CNEFE/IBGE address datasets."
+        },
+        "remote_sensing": {
+          "title": "Cloud Analytics (Remote Sensing)",
+          "description": "Native agricultural indices generation (NDVI), climate data extraction, and real-time Sentinel-2 satellite imagery."
+        },
+        "whitelabel": {
+          "title": "White-label Customization",
+          "description": "Incorporate your company logo, color palettes, and corporate identity. SOMAP adapts completely to your brand."
+        },
+        "workspaces": {
+          "title": "Isolated Workspaces",
+          "description": "Organize thematic layers, maps, and vector datasets into secure, role-based workspaces."
+        }
+      }
+    },
+    "deep_dive": {
+      "badge": "Native Remote Sensing",
+      "title": "Agricultural & Climate Monitoring with NDVI",
+      "subtitle": "Delimit Regions of Interest (ROI) and process Sentinel-2 satellite imagery and climate indices on the fly directly inside the platform.",
+      "stats": {
+        "ndvi_avg": "Average NDVI",
+        "ndvi_range": "Vegetation Range",
+        "rain": "Accumulated Rain",
+        "temp": "Average Temp"
+      },
+      "features": [
+        "Interactive vector polygon delimitation for agricultural parcel analysis",
+        "Real-time automated NDVI calculation pipeline",
+        "Direct correlation with historical and forecasted weather data",
+        "Dynamic opacity adjustment overlaying satellite and rural cadastre (CAR) layers"
+      ]
+    },
+    "editions": {
+      "tag": "Deployment Model",
+      "title": "Choose the Ideal Edition for Your Infrastructure",
+      "subtitle": "Unsure which path fits your architecture? Schedule a demo and we will assess the ideal scenario together.",
+      "cloud": {
+        "title": "Cloud Edition",
+        "subtitle": "Connected Edition",
+        "tagline": "For organizations with existing infrastructure.",
+        "description": "We host the SOMAP WebGIS interface and connect securely to your existing PostGIS database and GeoServer instance.",
+        "cta": "Inquire about Cloud",
+        "features": [
+          "Hosted SOMAP WebGIS interface, always maintained and updated",
+          "Secure tunnel connection to your own PostGIS and GeoServer",
+          "Unlimited workspaces for internal business units",
+          "Support for XYZ, WMS, WFS, and GeoJSON layers",
+          "Zero per-user or per-seat fees"
+        ]
+      },
+      "managed": {
+        "badge": "Most Popular",
+        "title": "Managed Edition",
+        "subtitle": "Fully Managed Edition",
+        "tagline": "Focus on business value, not server maintenance.",
+        "description": "A turn-key cloud solution. We fully manage the geospatial stack: spatial database, routing engine, map server, and interface with continuous monitoring.",
+        "cta": "Inquire about Managed",
+        "features": [
+          "Complete geospatial stack fully managed in the cloud",
+          "Dedicated PostGIS + GeoServer + pgRouting instances",
+          "24/7 health monitoring, automatic backups, and high availability",
+          "Remote sensing and real-time NDVI module enabled",
+          "Priority engineering support and regular updates included"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Edition",
+        "subtitle": "Corporate Edition",
+        "tagline": "Full control, on-premise security, and peak performance.",
+        "description": "The complete SOMAP stack deployed on dedicated servers (or via Kubernetes) inside the client's infrastructure, backed by senior SLA engineering support.",
+        "cta": "Inquire about Enterprise",
+        "features": [
+          "On-Premise or Kubernetes deployment within your own cloud",
+          "Full topological control and tailored source code extensions",
+          "Direct enterprise integration with ERP, WMS, and telemetry buses",
+          "Dedicated senior-level SLA support and architectural consulting",
+          "Full white-label branding and unrestricted data sovereignty"
+        ]
+      }
+    },
+    "use_cases": {
+      "tag": "Sectors Served",
+      "title": "Where SOMAP Elevates Real Operations",
+      "subtitle": "Versatile enterprise solution tailored for sectors requiring high-precision spatial intelligence.",
+      "logistics": {
+        "title": "Logistics & Transport",
+        "description": "Fleet dispatch, multi-stop routing with actual road graph costs, and turn-by-turn navigation link generation for drivers."
+      },
+      "agribusiness": {
+        "title": "Agribusiness & Environment",
+        "description": "Crop vigor monitoring via NDVI, rural property boundary auditing (CAR), interactive climate graphs, and environmental management."
+      },
+      "public_sector": {
+        "title": "Smart Cities & Public Management",
+        "description": "Urban infrastructure mapping, address geocoding with CNEFE/IBGE datasets for fiscal cadastres and territorial planning."
+      }
+    },
+    "form": {
+      "title": "Request a SOMAP Demonstration",
+      "subtitle": "Fill out the form below and we will get in touch to coordinate a live presentation tailored to your spatial and logistics challenges.",
+      "name_label": "Full Name *",
+      "name_placeholder": "Your full name",
+      "email_label": "Work Email *",
+      "email_placeholder": "you@company.com",
+      "org_label": "Organization / Company *",
+      "org_placeholder": "Your company name",
+      "challenge_label": "What is your main challenge today? *",
+      "challenge_options": {
+        "routing": "Logistics / Routing",
+        "webgis": "WebGIS & Layer Visualization",
+        "agri": "Agricultural Monitoring & NDVI",
+        "other": "Other challenge"
+      },
+      "deployment_label": "Deployment Preference *",
+      "deployment_options": {
+        "cloud": "Cloud Edition (Connected)",
+        "managed": "Managed Edition (Fully Managed)",
+        "enterprise": "Enterprise Edition (Corporate)",
+        "undecided": "Not sure yet (Need guidance)"
+      },
+      "message_label": "Additional Details / Message (Optional)",
+      "message_placeholder": "Briefly share your data volume or specific project requirements...",
+      "submit_button": "Request Demo",
+      "sending": "Sending request...",
+      "success_title": "Request sent successfully!",
+      "success_message": "Thank you for reaching out. We will connect shortly to arrange your personalized SOMAP demonstration.",
+      "send_another": "Send another request"
+    },
+    "footer_sub": {
+      "badge": "Geospatial Engineering Lab focused on Open Source solutions.",
+      "consulting": "GIS Consulting",
+      "support": "Technical Support",
+      "docs": "API Documentation",
+      "rights": "All rights reserved."
+    }
   }
 }
